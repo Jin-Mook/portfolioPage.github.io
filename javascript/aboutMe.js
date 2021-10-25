@@ -8,7 +8,7 @@ function scrollEvent(event) {
 
   if (currentLocation === container1Location && event.deltaY > 0) {
     window.scrollTo({top: container2.offsetTop, behavior: 'smooth'})
-  } else if (currentLocation === container2Location && event.deltaY < 0) {
+  } else if (currentLocation <= container2Location && event.deltaY < 0) {
     window.scrollTo({top: container1.offsetTop, behavior: 'smooth'})
   }
 }

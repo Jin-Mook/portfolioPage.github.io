@@ -10,13 +10,13 @@ function scrollEvent(event) {
 
   if (currentLocation === container1Location && event.deltaY > 0) {
     window.scrollTo({top: container2Location, behavior: 'smooth'})
-  } else if (currentLocation === container2Location) {
+  } else if (currentLocation >= container2Location && currentLocation <= (container2Location+container3Location)/2) {
     if (event.deltaY < 0) {
       window.scrollTo({top: container1Location, behavior: 'smooth'})
     } else {
       window.scrollTo({top: container3Location, behavior: 'smooth'})
     }
-  } else if (currentLocation === container3Location && event.deltaY < 0) {
+  } else if (currentLocation >= (container2Location+container3Location)/2 && event.deltaY < 0) {
     window.scrollTo({top: container2Location, behavior: 'smooth'})
   }
 }
