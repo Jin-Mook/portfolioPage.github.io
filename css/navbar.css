@@ -1,0 +1,35 @@
+/* 기본 default 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* 네비게이션 설정 */
+/* 네비게이션바 배경색은 없애자 */
+#navbar-container {
+  position: fixed;
+  z-index: 9999;
+  right: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: bisque;
+  opacity: 0.5;
+  width: 500px;
+}
+
+#navbar-container div {
+  margin-top: 18px;
+  font-size: 30px;
+}
+
+#navbar-container div li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+/* 메인 부분 설정 */
+#home-page {
+  background-image: url("../images/home-page.jpg");
+  height: 100vh;
+  background-position: center;
+  /* background-size: cover; */
+  background-size: 100vw 100vh;
+}
+
+#home-context {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+}
+
+#home-context h2 {
+  font-size: 65px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
