@@ -1,6 +1,6 @@
 const p = document.querySelector('.text-simulation')
-const text = p.innerHTML
-p.innerHTML = ''
+const text = "안녕하세요 저는 정진묵 입니다."
+
 
 function textAnimation() {
   p.innerHTML = ''
@@ -13,5 +13,6 @@ function textAnimation() {
     i++
   }, 120)
 }
-textAnimation()
+
+setTimeout(textAnimation, 2000)
 setInterval(textAnimation, 10000)

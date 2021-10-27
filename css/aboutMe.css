@@ -1,9 +1,53 @@
+/* background 한화면에 보이게 설정 */
 .aboutme-container1 {
   height: 100vh;
+  position: relative;
   background-color: wheat;
 }
 
+/* 내 사진에 대한 css */
+.aboutme-container1 .myphoto {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -100px;
+  width: 400px;
+  height: 500px;
+  background-color: yellow;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.520, 0.035, 0.490, 0.990);
+}
+
+.show-photo {
+  left : 15% !important; 
+  opacity: 1 !important;
+}
+
+/* 내 소개에 대한 css */
+.aboutme-container1 .myinfo {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: violet;
+  opacity: 0;
+  transition-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.690, 0.140, 0.550, 1.005);
+}
+
+.show-info {
+  opacity: 1 !important;
+}
+
+
 .aboutme-container2 {
   height: 100vh;
+  position: relative;
   background-color: beige
 }
+
+
+

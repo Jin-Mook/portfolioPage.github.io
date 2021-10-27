@@ -17,7 +17,6 @@ body {
   right: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: bisque;
   opacity: 0.5;
   width: 500px;
 }
@@ -25,11 +24,16 @@ body {
 #navbar-container div {
   margin-top: 18px;
   font-size: 30px;
+  text-align: center;
+}
+
+#navbar-container div a {
+  text-decoration: none;
 }
 
 #navbar-container div li {
   list-style: none;
-  text-decoration: none;
   text-align: center;
   cursor: pointer;
+  display: inline;
 }
