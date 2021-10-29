@@ -1,7 +1,3 @@
-const frontend = document.querySelector("#frontend")
-const backend = document.querySelector("#backend")
-const data = document.querySelector("#data")
-
 const frontendImgaeBox = document.querySelector("#frontend-img")
 const backendImgaeBox = document.querySelector("#backend-img")
 const dataImgaeBox = document.querySelector("#data-img")
